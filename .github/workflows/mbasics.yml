@@ -49,6 +49,12 @@ jobs:
           
       - name: List current folder
         run : ls -la
+        
+      - name: Git clone mrepo
+        uses: actions/checkout@v1
+        
+      - name: List current folder
+        run : ls -la
           
   m_deploy:
     runs-on: ubuntu-latest
